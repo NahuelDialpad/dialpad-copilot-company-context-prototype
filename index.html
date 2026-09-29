@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Dialpad Copilot · Documents concept</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="shell">
+      <aside class="icon-rail" aria-label="Primary navigation">
+        <div class="dialpad-mark" aria-label="Dialpad">✦<b>d</b></div>
+        <div class="rail-icons" aria-hidden="true">
+          <span>☰</span><span>✦</span><span>⚙</span><span>♙</span><span>▧</span
+          ><span>⌁</span><span>◴</span><span class="rail-active">✧</span>
+        </div>
+      </aside>
+      <aside
+        class="admin-nav"
+        id="admin-nav"
+        aria-label="Dialpad Admin navigation"
+      >
+        <div class="account-row">
+          <button
+            type="button"
+            class="account-switch"
+            aria-label="Demo company"
+          >
+            Demo company <span>⌄</span>
+          </button>
+        </div>
+        <nav>
+          <div class="nav-section-title">Dialpad AI</div>
+          <a href="#" class="nav-entry" data-inert="AI Assistants"
+            >AI Assistants</a
+          >
+          <a href="#" class="nav-entry active" aria-current="page"
+            >Dialpad Copilot</a
+          >
+          <a href="#" class="nav-entry" data-inert="AI Live Coach Cards"
+            >AI Live Coach Cards</a
+          >
+          <a href="#" class="nav-entry" data-inert="Custom Moments"
+            >Custom Moments</a
+          >
+          <a href="#" class="nav-entry" data-inert="Playbooks">Playbooks</a>
+          <a href="#" class="nav-entry" data-inert="AI CSAT">AI CSAT</a>
+          <a href="#" class="nav-entry" data-inert="AI Scorecards"
+            >AI Scorecards</a
+          >
+          <div class="nav-section-title secondary">
+            Channels &amp; Workflows
+          </div>
+          <a href="#" class="nav-entry" data-inert="Digital channels"
+            >Digital channels</a
+          >
+          <a href="#" class="nav-entry" data-inert="Historical administration"
+            >Historical administration</a
+          >
+          <a href="#" class="nav-entry" data-inert="Workflows">Workflows</a>
+        </nav>
+      </aside>
+      <div class="work-area">
+        <header class="admin-top">
+          <button
+            type="button"
+            class="mobile-nav-button"
+            id="mobile-nav-button"
+            aria-label="Open navigation"
+          >
+            ☰</button
+          ><span>AI &amp; AUTOMATION</span>
+          <div class="help-search" aria-label="Search Help Center">
+            <span aria-hidden="true">⌕</span> Search Help Center
+          </div>
+        </header>
+        <main class="workspace">
+          <div class="breadcrumb" aria-label="Location">
+            ‹ &nbsp; Dialpad AI
+          </div>
+          <header class="copilot-header">
+            <div>
+              <div class="copilot-title-row">
+                <h1>Dialpad Copilot</h1>
+                <span class="concept-badge">Interactive concept</span>
+              </div>
+              <p>One Copilot, with knowledge your company controls.</p>
+              <p class="prototype-session-note">
+                Prototype data only. Changes stay in this browser and reset on refresh.
+              </p>
+            </div>
+            <button
+              type="button"
+              class="primary-button"
+              data-action="test-copilot"
+            >
+              Test Copilot
+            </button>
+          </header>
+          <div class="inner-layout">
+            <nav class="inner-nav" aria-label="Dialpad Copilot sections">
+              <button
+                type="button"
+                class="inner-link active"
+                data-section="documents"
+                aria-current="page"
+              >
+                Documents</button
+              ><button
+                type="button"
+                class="inner-link"
+                data-section="analytics"
+              >
+                Analytics</button
+              ><button type="button" class="inner-link" data-section="mcps">
+                MCPs
+              </button>
+            </nav>
+            <section
+              class="section-content"
+              id="section-content"
+              aria-live="polite"
+            ></section>
+          </div>
+        </main>
+      </div>
+    </div>
+    <div id="access-preview-root"></div>
+    <div id="drawer-root"></div>
+    <div id="modal-root"></div>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
